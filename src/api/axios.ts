@@ -2,7 +2,7 @@ import axios from 'axios';
 import { auth } from '../config/firebase.js';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3009/api'
+  baseURL: 'https://astronomy-server.railway.app/api'
 });
 
 api.interceptors.request.use(async (config) => {
